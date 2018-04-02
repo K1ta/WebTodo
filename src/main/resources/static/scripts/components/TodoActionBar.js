@@ -13,6 +13,7 @@ function TodoActionsBarConstructor() {
     this._counterNode = document.querySelector('.todos-action-bar_undone-counter');
     this._counterNodeText = getTextNode(this._counterNode);
     this._clearCompletedNode = document.querySelector('.todos-action-bar_clear-completed');
+    this._actionBar = document.querySelector('.todos-action-bar'); //элемент тулбара
 
     this._clearCompletedNode.addEventListener('click', this);
 
@@ -44,6 +45,11 @@ todoActionsBarConstructorPrototype._clearCompleted = function () {
  */
 todoActionsBarConstructorPrototype.setItemsCount = function (count) {
     this._counterNodeText.nodeValue = count + ' ' + 'items left';
+    if(count == 0) { //если элементов 0, то прячем панель
+        this._actionBar.classList.add('__hide');
+    } else {
+        this._actionBar.classList.remove('__hide');
+    }
     return this;
 };
 

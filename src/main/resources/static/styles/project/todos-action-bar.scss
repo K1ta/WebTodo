@@ -13,7 +13,9 @@
     .todos-filter{
         background: none;
         border: none;
-        outline-width: $w-outline;
-        outline-color: $c-pink-light;
+        outline: $c-pink-light $w-outline;
         color: $c-gray-light;
         }
+.todos-action-bar.__hide {
+    display: none;
+}

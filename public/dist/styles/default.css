@@ -129,9 +129,11 @@ body {
 .todos-filter {
   background: none;
   border: none;
-  outline-width: 1px;
-  outline-color: #ebdfdf;
+  outline: #ebdfdf 1px;
   color: #888888; }
+
+.todos-action-bar.__hide {
+  display: none; }
 
 .todos-element {
   background: none;
