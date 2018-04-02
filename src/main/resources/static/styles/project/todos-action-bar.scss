@@ -1,0 +1,19 @@
+@import "../config/globals";
+
+.todos-action-bar {
+    padding: $offset_15 $offset_3x $offset_3x + $offset_half $offset_3x;
+    display: flex;
+    justify-content: space-between;
+    color: $c-gray-light;
+    }
+    .todos-action-bar_undone-counter {
+        color: $c-gray-light;
+        }
+    .todos-action-bar_clear-completed,
+    .todos-filter{
+        background: none;
+        border: none;
+        outline-width: $w-outline;
+        outline-color: $c-pink-light;
+        color: $c-gray-light;
+        }

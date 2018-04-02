@@ -1,0 +1,52 @@
+@import "../config/globals";
+
+.todos-add-element {
+    @include clearfix();
+    background: $c-white;
+    border-bottom: 1px solid $c-light;
+}
+    .todos-add-element:after {
+        //content: '';
+        display: block;
+        clear: both;
+        }
+    .todos-add_select-all {
+        background: none;
+        position: relative;
+        width: $s-select-all;
+        height: $s-select-all;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        float: left;
+        }
+        .todos-add_select-all_icon {
+            background: url("../../images/icons/select-all.png") no-repeat 0 0;
+            position: absolute;
+            width: $w-select-all-icon;
+            height: $h-select-all-icon;
+            left: 50%;
+            top: 50%;
+            margin: (-($offset + $offset_half)) (-$offset_3x);
+        }
+    .todos-add_new-element-w {
+        overflow: hidden;
+        }
+        .todos-add_new-element {
+            box-sizing: border-box;
+            background: none;
+            width: 100%;
+            border: 0;
+            color: $c-gray;
+            font-size: $fs_xx-large;
+            line-height: $lh_xx-large;
+            font-weight: 200;
+            padding-right: $offset_3x;
+            margin-top: $offset_3x + $offset_half;
+            outline: none;
+            }
+            .todos-add_new-element::placeholder {
+                color: $c-gray-new-element;
+                font-style: italic;
+                }

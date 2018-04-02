@@ -1,0 +1,26 @@
+@import "../config/globals";
+
+.todos-container {
+    background: $c-white;
+    box-shadow: $box-shadow;
+    position: relative;
+    }
+    .todos-container:before,
+    .todos-container:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        background: $c-white;
+        box-shadow: $box-shadow;
+        z-index: -1;
+        }
+        .todos-container:before {
+            height: 10px;
+            left: $offset;
+            right: $offset;
+            }
+        .todos-container:after {
+            height: 5px;
+            left: $offset_half;
+            right: $offset_half;
+            }

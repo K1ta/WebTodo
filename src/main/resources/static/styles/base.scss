@@ -1,0 +1,14 @@
+@import "./config/globals";
+
+body, head, input, button, textarea, h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family;
+    font-size: $fs_little;
+}
+
+body {
+    background: #f5f5f5;
+    max-width: $max-width;
+    min-width: $min-width;
+    padding: 0 $offset_5x;
+    margin: 0 auto;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Homework</title>
+    <link rel="stylesheet" href="/dist/styles/default.css"/>
+    <script src="/dist/scripts/bundle.js"></script>
+</head>
+
+<script type="text/html" id="todoItemTemplate">
+    <div class="todos-element">
+        <div class="todos-element_mark">
+            <input class="todos-element_mark-checkbox" type="checkbox" aria-label="mark us done"/>
+            <div class="todos-element_mark-icon"></div>
+        </div>
+        <div class="todos-element_text-w">
+            <div class="todos-element_text" contenteditable="true" aria-label="task description"></div>
+        </div>
+        <div class="todos-element_delete">
+            <button class="todos-element_delete_button" aria-label="Delete this element"></button>
+            <div class="todos-element_delete_icon"></div>
+        </div>
+    </div>
+</script>
+
+<body>
+<div class="todos-header">
+    <h1 class="todos-title">todos</h1>
+</div>
+
+<div class="todos-container">
+
+    <div class="todos-add-element">
+        <button class="todos-add_select-all" aria-label="selest all as done">
+            <div class="todos-add_select-all_icon"></div>
+        </button>
+        <div class="todos-add_new-element-w">
+            <input class="todos-add_new-element" placeholder="What needs to be done?" aria-label="Add new element"/>
+        </div>
+    </div>
+    <div class="todos-w">
+        <div class="todos-list"></div>
+    </div>
+
+    <div class="todos-w">
+        <div class="todos-action-bar">
+            <div class="todos-action-bar_undone-counter" aria-label="Number of elements left">
+                0 items left
+            </div>
+            <div class="todos_filters">
+                <button class="todos-filter __active" data-filter="all" type="submit" aria-label="Select all elements">
+                    All
+                </button>
+                <button class="todos-filter" data-filter="unready" type="submit" aria-label="Select active elements">
+                    Active
+                </button>
+                <button class="todos-filter" data-filter="ready" type="submit" aria-label="Select completed elements">
+                    Completed
+                </button>
+            </div>
+            <button class="todos-action-bar_clear-completed" aria-label="Clear completed elements">Clear completed
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
