@@ -1,0 +1,35 @@
+{
+  "name": "preprocessor-stub",
+  "version": "0.0.1",
+  "description": "Stub for setting up preprocessor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ok-technopolis/preprocessor-stub.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-css-rebase-urls": "0.0.5",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.5.1",
+    "webpack-cli": "^2.0.13"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "nomnom": "^1.8.1",
+    "webpack": "^4.4.1"
+  }
+}
